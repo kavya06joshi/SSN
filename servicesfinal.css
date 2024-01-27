@@ -1,0 +1,109 @@
+body {
+font-family: 'Arial', sans-serif;
+background: #f4f4f4;
+margin: 0;
+padding: 0;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+overflow: hidden;
+    }
+
+header {
+font-family: georgia;
+font-size: 3em; 
+color: black;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 10px;
+text-shadow: 2px 2px 1px pink;
+margin: 0px;
+margin-top: 7px;
+margin-left: 10px;
+    }
+
+
+.intro h1 {
+background: linear-gradient(to right, red, blue, red);
+-webkit-background-clip: text;
+color: transparent;
+text-fill-color: transparent;
+margin-bottom: 10px; /* Add space below h1 */
+margin-top: 0px;
+margin-left: 10px;
+    }
+
+.timeline-carousel {
+width: 98%;
+overflow: hidden;
+position: relative;
+left: 10px;
+    }
+
+.timeline-card {
+flex: 0 0 auto; /* Allow the cards to grow, but not shrink */
+width: 300px;
+height: 560px;
+background-color: #fff;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.5s;
+margin-right: 15px;
+position: ;
+    }
+
+.timeline-card img {
+width: 100%;
+height: relative;
+transition: transform 0.7s ease;
+}
+
+.timeline-card:hover img {
+transform: scale(1.1);
+}
+
+.timeline-card-content {
+padding: 20px;
+box-sizing: border-box;
+    }
+
+.timeline-card h3 {
+margin-top: 0;
+color: #333;
+    }
+
+.timeline-card p {
+color: #666;
+    }
+
+.carousel-container {
+display: flex;
+transform: translateX(0);
+transition: transform 0.5s;
+    }
+
+.nav-button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 30px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+    }
+
+.prev {
+left: 0;
+    }
+
+.next {
+right: 0;
+    }

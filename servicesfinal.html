@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Tech Solutions</title>
+      <link rel="stylesheet" type="text/css" href="servicesfinal.css">
+</head>
+<body>
+
+
+<header>
+        Tech Solutions
+    </header>
+
+    <div class="intro">
+        <h1>
+            Welcome to our tech solutions Hub!
+        </h1>
+    </div>
+
+
+<div class="timeline-carousel">
+  <div class="carousel-container">
+    <div class="timeline-card">
+      <img src="6.jpg" alt="Service 1">
+      <div class="timeline-card-content">
+        <h3>CPU Customisation</h3>
+        <p>Your CPU, your rules. Customize performance with our tailored CPU solutions. Personalized power, just the way you want it.</p>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <img src="c.jpg" alt="the">
+      <div class="timeline-card-content">
+        <h3>Cutting Edge Laptops</h3>
+        <p>Discover a laptop for every need. From the elegance of Apple to the power of Dell, we offer a curated selection of top-tier brands. Find your perfect match in style and performance, right here.</p>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <img src="h.jpg" alt="Service 1">
+      <div class="timeline-card-content">
+        <h3>Technical Solutions</h3>
+        <p>Reignite your aging devices and cherished memories with our expert repair services. Whether it's sluggish speeds or memory hiccups, we specialize in restoring optimal performance. Give your gadgets the care they deserve and let us breathe new life into both your tech and precious memories.</p>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <img src="r.jpg" alt="Service 2">
+      <div class="timeline-card-content">
+        <h3>Accessiories</h3>
+        <p>Unleash the potential of your devices with our comprehensive Accessories lineup. Find the perfect match for your setup – be it sleek keyboards, advanced mice, reliable chargers, spacious storage, or stylish tech organizers and laptop bags.</p>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <img src="22.jpg" alt="Service 2">
+      <div class="timeline-card-content">
+        <h3>Software related services</h3>
+        <p>Empower your design and drafting projects with our software expertise. Explore AutoCAD for precision and creativity, coupled with a range of operating systems including Microsoft, Linux, and more for a seamless computing experience.</p>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <img src="i.jpg" alt="Service 2">
+      <div class="timeline-card-content">
+        <h3>Refill</h3>
+        <p>Revitalize your printer's performance and reduce costs with our expert cartridge refilling services. We ensure eco-friendly solutions that maintain print quality, extending the life of your cartridges. Say goodbye to unnecessary expenses and embrace sustainable printing with our professional refilling services.</p>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <img src="service2.jpg" alt="Service 2">
+      <div class="timeline-card-content">
+        <h3>Service 2</h3>
+        <p>Description for Service 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <img src="service2.jpg" alt="Service 2">
+      <div class="timeline-card-content">
+        <h3>Service 2</h3>
+        <p>Description for Service 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <!-- Add more timeline cards as needed -->
+
+  </div>
+
+  <button class="nav-button prev" onclick="scrollTimeline(-1)">❮</button>
+  <button class="nav-button next" onclick="scrollTimeline(1)">❯</button>
+</div>
+
+<script>
+  let currentIndex = 0;
+
+  function scrollTimeline(direction) {
+    const container = document.querySelector('.carousel-container');
+    const cards = document.querySelectorAll('.timeline-card');
+    const cardWidth = cards[0].offsetWidth + 20; // Including margin-right
+
+    currentIndex = Math.min(Math.max(currentIndex + direction, 0), cards.length - 1);
+    const translateValue = -currentIndex * cardWidth;
+    container.style.transform = `translateX(${translateValue}px)`;
+  }
+</script>
+
+</body>
+</html>
